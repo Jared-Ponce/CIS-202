@@ -5,8 +5,6 @@
 using namespace std;
 
 string FindID(string name, ifstream &infoFS) {
-
-   try{
     string current_name;
     string current_id;
     while(!infoFS.eof()){
@@ -16,31 +14,18 @@ string FindID(string name, ifstream &infoFS) {
         }
     }
     throw runtime_error("Student ID not found for " + name);
-   }
-
-    catch(runtime_error& excpt){
-        cout << excpt.what() << endl;
-    }
 }
 
 string FindName(string ID, ifstream &infoFS) {
-
-   try{
     string current_name;
     string current_id;
     while(!infoFS.eof()){
         infoFS >> current_name >> current_id;
-        if(name == current_name){
-            return current_id;
+        if(ID == current_id){
+            return current_name;
         }
     }
-    throw runtime_error("Student ID not found for " + name);
-   }
-
-    catch(runtime_error& excpt){
-        cout << excpt.what() << endl;
-    }
-   
+    throw runtime_error("Student name not found for " + ID);
 }
 
 int main() {
@@ -62,6 +47,7 @@ int main() {
 
    // FIXME: FindID() and FindName() may throw an Exception.
    //        Insert a try/catch statement to catch the exception and output the exception message.
+   try{
    if (userChoice == 0) {
       cin >> studentName;
       studentID = FindID(studentName, studentInfoFS);
@@ -71,6 +57,10 @@ int main() {
       cin >> studentID;
       studentName = FindName(studentID, studentInfoFS);
       cout << studentName << endl;
+   }
+   }
+   catch(runtime_error &e){
+    cout << e.what() << endl;
    }
 
    studentInfoFS.close();
