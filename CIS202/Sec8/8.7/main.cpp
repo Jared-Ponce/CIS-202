@@ -32,6 +32,13 @@ template <typename TheType>
 vector<TheType> GetStatistics(vector<TheType> &list)
 {
     /* Type your code here. */
+    int min = 0;
+    int median = 0;
+    int max = list.at(list.size()-1);
+
+    for(unsigned int i = 0; i < list.size(); i++){
+        
+    }
 }
 
 // Read values into a vector, sort the vector, output the sorted vector,

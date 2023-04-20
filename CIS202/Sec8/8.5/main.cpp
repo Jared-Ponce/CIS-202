@@ -109,8 +109,7 @@ int main() {
 
 	for (i = 0; i < statePopulation.size(); ++i) {
         // TODO: Using state name, find population. Print pair info.
-		if(statePopulation.at(i).GetKey() == abbrev){
-            population = statePopulation.at(i).GetValue();
+		if(statePopulation.at(i).GetKey() == state){
             statePopulation.at(i).PrintInfo();
         }
 	}
