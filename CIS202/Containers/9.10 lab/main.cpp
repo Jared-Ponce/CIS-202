@@ -22,7 +22,7 @@ int main()
     }
 
     // TODO: Print the shoppingList list using the PrintNodeData() function
-    shoppingList.PrintNodeData();
+    shoppingList;
 
     return 0;
 }
