@@ -3,18 +3,9 @@
 
 using namespace std;
 
-string make_lower(string input){
-    for(char value : input){
-        if(isalpha(value)){
-            
-        }
-    }
-}
-
 int main()
 {
     string line;
-    string new_line = "";
     bool result;
 
     deque<char> check; // change name later
@@ -23,19 +14,29 @@ int main()
     getline(cin, line);
 
     for(char value : line){
+        if(isalpha(value)==0){
+            continue;
+        }
         check.push_front(tolower(value));
     }
 
-    for(char value : check){
-        new_line.push_back(value);
+    for(auto elm : check){
+        if(check.front() == check.back()){
+            result = true;
+            check.pop_front();
+            check.pop_back();
+        }
+        else{
+            result = false;
+            break;
+        }
     }
 
-    if(line == new_line){
-        cout << "Yes, " << '"' << line << '"' << "is a palindrome." << endl;
+    if(result == true){
+        cout << "Yes, " << '"' << line << '"' << " is a palindrome." << endl;
     }
-
     else{
-        cout << "No, " << '"' << line << '"' << "is not a palindrome." << endl;
+        cout << "No, " << '"' << line << '"' << " is not a palindrome." << endl;
     }
 
     return 0;
