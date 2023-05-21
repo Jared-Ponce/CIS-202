@@ -23,7 +23,7 @@ print(f"Set B: {Set2}") # Print Set B
 
 container = set()
 
-for x in Set1:          # fgigigugiulaur
+for x in Set1:
     for y in Set2:
         new_set = (x,y)
         container.add(new_set)
@@ -31,3 +31,7 @@ for x in Set1:          # fgigigugiulaur
 print(f"\nCartesian Products: {sorted(container)}")
 
 print(f"Total Cartesian Product Elements: {len(container)}")
+print("\nHere are some useful applications of Cartesian Products:")
+print("* Checker board.")
+print("* Catagorizing animals.")
+print("* School seperating students by grade level.")
