@@ -33,7 +33,7 @@
 - trees are like classes
 ### Terms
 
-![asd](Sc1.png)
+<img src=Sc1.png width=300 height=auto>
 
 ### additional notes
 friend class Tree;
@@ -43,3 +43,5 @@ friend class Tree;
 - preproccessor 
 
 ### multi-file compileing
+
+- [x] ToDo
