@@ -10,6 +10,7 @@
 - cd 'name' -> change directory
 - ls -> list all folders and files within the directory
 - pwd -> full path to current directory
+- cp * [filename or directory] -> copys all files to folder
 
 ### Git commands
 - git clone 'address'
@@ -44,4 +45,5 @@ friend class Tree;
 
 ### multi-file compileing
 
-- [x] ToDo
+- make
+- make run
