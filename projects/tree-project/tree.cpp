@@ -39,18 +39,19 @@ int Node::size() const
     return 1 + sum;
 }
 
-void Tree::print() const
+void Tree::print() const // Tree Print
 {
     if (root != nullptr)
     {
         root->print();
     }
 }
-void Node::print() const
+void Node::print() const // Node print
 {
+    std::cout << data << std::endl; // will print in Inorder traversal
     for (Node *np : children)
     {
         np->print();
     }
-    std::cout << data << std::endl;
+    // std::cout << data << std::endl; // will print in Depth-first order
 }
