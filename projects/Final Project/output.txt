@@ -1,0 +1,13 @@
+Name                               Country                  Elevation
+==========================================================================================
+Chimborazo                         Ecuador                  20549ft(6263.411m)
+Matterhorn                         Switzerland              14692ft(4478.176m)
+Olympus                            Greece (Macedonia)       9573ft(2917.886m)
+Everest                            Nepal                    29029ft(8848.147m)
+Mount Marcy - Adirondacks          United States            5344ft(1628.871m)
+Mount Mitchell - Blue Ridge        United States            6684ft(2037.308m)
+Zugspitze                          Switzerland              9719ft(2962.387m)
+==========================================================================================
+The mountain with the smallest elevation is:
+Mount Marcy - Adirondacks          United States            5344ft(1628.871m)
+==========================================================================================
