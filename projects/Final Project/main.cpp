@@ -19,7 +19,7 @@ int minEvelation(const vector<Mountain> vector) //Binary Search
     int lowest = vector.at(0).getElevation();
     int lowestIndex = 0;
     int temp = 0;
-    for (int i = 0; i < vector.size() - 1; i++)
+    for (int i = 0; i < vector.size(); i++)
     {
         temp = vector.at(i).getElevation();
         if (temp < lowest)
